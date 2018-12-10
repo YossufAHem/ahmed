@@ -316,7 +316,7 @@ client.on('message', message => {
  
 client.on('message', msg => {
 
-  if(message.content === `${prefix}join`){
+    if (msg.content == '-pjoin') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
