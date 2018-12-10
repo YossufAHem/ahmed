@@ -255,7 +255,7 @@ client.on("message", message => {
     if (message.content === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
-      .setDescription(`─═══{✯ Music Commands✯}─═══
+      .setDescription(`─═══{✯ Music Commands✯}═══─
 ════════════
 ${prefix}play => To Play A Song From Youtube
 ════════════
