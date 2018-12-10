@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-" 
+const prefix = "-p" 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -255,16 +255,26 @@ client.on("message", message => {
     if (message.content === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
-      .setDescription(`─═══════ {✯:dart: Music Commands - اوامر الموسيقى :dart:✯} ═══════─
+      .setDescription(`─═══{✯ Music Commands✯}─═══
+════════════
 ${prefix}play => To Play A Song From Youtube
+════════════
 ${prefix}skip => To Skip The Song And Play The Next Song
+════════════
 ${prefix}stop => To Pause The Song
+════════════
 ${prefix}resume => To Resume The Song
+════════════
 ${prefix}vol => To Change The Volume Song
+════════════
 ${prefix}leave => To Disconnect The Bot From Your Voicechannel
+════════════
 ${prefix}np => To View The Song Played
+════════════
 ${prefix}queue => To View The Songs Queue
+════════════
 ${prefix}invite => To Invite The Bot In Your Server
+════════════
 
  `)
    message.author.sendEmbed(embed)
